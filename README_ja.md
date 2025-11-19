@@ -13,24 +13,6 @@
 
 `.uproject` ファイルを `json` として正しく認識させ、Unreal Shader (`.ush`/`.usf`) や Unreal C++ のマクロ (`UCLASS`, `UPROPERTY` など) にTree-sitterによる専用のハイライトを提供します。
 
-Unreal プラグイン群
-* [UEP.nvim](https://github.com/taku25/UEP.nvim)
-  * urpojectを解析してファイルナビゲートなどを簡単に行えるようになります
-* [UBT.nvim](https://github.com/taku25/UBT.nvim)
-  * BuildやGenerateClangDataBaseなどを非同期でNeovim上から使えるようになります
-* [UCM.nvim](https://github.com/taku25/UCM.nvim)
-  * クラスの追加や削除がNeovim上からできるようになります。
-* [ULG.nvim](https://github.com/taku25/ULG.nvim)
-  * UEのログやliveCoding,stat fpsなどnvim上からできるようになります
-* [USH.nvim](https://github.com/taku25/USH.nvim)
-  * ushellをnvimから対話的に操作できるようになります
-* [neo-tree-unl](https://github.com/taku25/neo-tree-unl.nvim)
-  * IDEのようなプロジェクトエクスプローラーを表示できます。
-* [tree-sitter for Unreal Engine](https://github.com/taku25/tree-sitter-unreal-cpp)
-  * UCLASSなどを含めてtree-sitterの構文木を使ってハイライトができます
-* [USX.nvim](https://github.com/taku25/USX.nvim)
-  * UnrealC++やUnrealShaderの構文ハイライトを提供します。
-
 [English](./README.md) | [日本語](./README_ja.md)
 
 ---
@@ -86,7 +68,31 @@ return {
 
 このプラグインは自動的に動作します。
 
+## その他
 
+**Unreal Engine 関連プラグイン:**
+
+* **[UEP.nvim](https://github.com/taku25/UEP.nvim)**
+    * `.uproject` を解析し、ファイルナビゲーションなどを簡単に行えるようになります。
+* **[UEA.nvim](https://www.google.com/url?sa=E&source=gmail&q=https://github.com/taku25/UEA.nvim)**
+    * C++クラスがどのBlueprintアセットから使用されているかを検索します。
+* **[UBT.nvim](https://github.com/taku25/UBT.nvim)**
+    * BuildやGenerateClangDataBaseなどを、Neovim上から非同期で使えるようになります。
+* **[UCM.nvim](https://github.com/taku25/UCM.nvim)**
+    * Neovim上からクラスの追加や削除ができるようになります。
+* **[ULG.nvim](https://github.com/taku25/ULG.nvim)**
+    * UEのログやLiveCoding、stat fpsなどをNeovim上から表示できるようになります。
+* **[USH.nvim](https://github.com/taku25/USH.nvim)**
+    * Neovimから `ushell` と対話的に操作できるようになります。
+* **[USX.nvim](https://github.com/taku25/USX.nvim)**
+    * `tree-sitter-unreal-cpp` および `tree-sitter-unreal-shader` のハイライト設定用プラグインです。
+* **[neo-tree-unl](https://github.com/taku25/neo-tree-unl.nvim)**
+    * IDEのようなプロジェクトエクスプローラーを表示できます。
+* **[tree-sitter for Unreal Engine](https://github.com/taku25/tree-sitter-unreal-cpp)**
+    * UCLASSなどを含め、tree-sitterの構文木を使ってハイライトができます。
+* **[tree-sitter for Unreal Engine Shader](https://github.com/taku25/tree-sitter-unreal-shader)**
+    * usf, ush などの Unreal シェーダーの構文ハイライトを提供します。
+  
 ## 📜 ライセンス (License)
 
 MIT License
