@@ -1,1 +1,1 @@
-; inherits: cpp
+;; Empty for debugging
